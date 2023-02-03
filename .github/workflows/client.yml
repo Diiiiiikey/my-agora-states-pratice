@@ -32,4 +32,4 @@ jobs:
             --region ap-northeast-2 \
             build s3://fe-110-diiiiiikey-s3 --acl public-read\
             --delete
-        working-directory: ./app
+        working-directory: index.js
