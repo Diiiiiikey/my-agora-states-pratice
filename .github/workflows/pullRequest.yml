@@ -1,15 +1,16 @@
 name: Bare Minimum Requirements
-
+# 워크플로 이름
 on: [push, pull_request]
-
+# 월 작동시킬지
 jobs:
   test:
-    runs-on: ubuntu-latest
-    steps:
+  # 테스트 작업
+    runs-on: ubuntu-latest # 작업을 실행할 깃헙의 호스팅 러너
+    steps: # 작업 나열 / 깃헙에 릴리즈된 특정 버전 참조
       - uses: actions/checkout@v2
       - name: Bare Minimum Requirements
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v1 # 노드 셋업
         with:
-          node-version: '16'
+          node-version: '16' # 노드 16
       - run: npm install
       - run: npm test

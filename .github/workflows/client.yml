@@ -32,4 +32,4 @@ jobs:
             --region ap-northeast-2 \
             build s3://fe-110-diiiiiikey-s3
             --delete
-        working-directory: ./my-agora-states-client/src/index.js
+        working-directory: my-agora-states-client/src/index.js
